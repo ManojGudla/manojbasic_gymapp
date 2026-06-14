@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Members</title>
+</head>
+<body>
+
+<h2>Gym Members</h2>
+
+<table border="1">
+
+<tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Plan</th>
+</tr>
+
+{% for member in members %}
+
+<tr>
+    <td>{{ member[0] }}</td>
+    <td>{{ member[1] }}</td>
+    <td>{{ member[2] }}</td>
+    <td>{{ member[3] }}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+</body>
+</html>
